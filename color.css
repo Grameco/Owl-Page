@@ -1,0 +1,196 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+}
+
+.container {
+    width: 100vh;
+    height: 60vh;
+    background-color: yellow;
+    box-shadow: 2px 2px 10px 2px black;
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    width: 30%;
+    height: 100%;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.frame {
+    border: 2px solid black;
+    box-shadow: 1px 1px 10px 1px black;
+    width: 50%;
+    height: 35%;
+    background-color: red;
+    position: absolute;
+}
+
+.right {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+#blur {
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.204);
+    text-shadow: 0 0 2px #000;
+}
+
+h1 {
+    text-shadow: 1px 1px 1px rgb(205, 71, 50);
+}
+
+.price {
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.537);
+    padding-left: 0.5rem;
+}
+
+.float {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.choice {
+    display: flex;
+}
+
+.description-section {
+    display: flex;
+}
+
+.section1 {
+    opacity: 0;
+}
+
+.section2 {
+    gap: 2rem;
+    opacity: 0;
+}
+
+.a > p > span {
+    font-weight: bold;
+}
+
+.colours {
+    display: flex;
+    justify-content: left;
+}
+
+.button {
+    background-color: peachpuff;
+    width: 10rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.button a {
+    text-decoration: none;
+    color: black;
+}
+
+.button i {
+    padding-right: 0.3rem;
+    font-size: small;
+}
+
+.button:hover {
+    background-color: rgb(228, 183, 145);
+}
+
+
+[type = "radio"] {
+    visibility: hidden;
+}
+
+.color-btn + label {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    transition: all 200ms linear;
+    box-shadow: 0 12px 35px 0 rgba(16, 39, 112, 0.25);
+}
+
+.color-btn:checked + label {
+    transform: scale(1.1);
+    border: 3px solid #434343;
+}
+
+.description-btn + label {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.204);
+    text-shadow: 0 0 2px #000;
+    transition: all 200ms linear;
+}
+
+.description-btn:checked + label {
+    color: black;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+}
+
+.color1 + label {
+    background-color: red;
+}
+
+.color2 + label {
+    background-color: orange;
+}
+
+.color3 + label {
+    background-color: blue;
+}
+
+.color4 + label {
+    background-color: pink;
+}
+
+.color5 + label {
+    background-color: navy;
+}
+
+.color6 + label {
+    background-color: green;
+}
+
+.color2:checked ~ .left.frame {
+    background-color: orange;
+}
+
+#description1:checked ~ #section1 {
+    opacity: 1;
+}
+
+#description2:checked ~ #section2 {
+    opacity: 1;
+}

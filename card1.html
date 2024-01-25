@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card 1</title>
+    <style>
+        * {
+            margin: 0pc;
+            padding: 0px;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+        .container {
+            width: 100%;
+            height: 100%;
+            min-height: 750px;
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgb(188, 187, 205) 0%, rgba(121, 125, 137, 0.98) 43%, rgb(194, 187, 227) 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .card {
+            width: 360px;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.5);
+            gap: 30px;
+            padding: 20px;
+            border-radius: 20px;
+            background: rgb(26,6,34);
+            background: linear-gradient(90deg, rgb(222, 210, 227) 5%, rgba(45, 67, 74, 0.98) 47% rgb(83, 20, 208, 1) 83%);
+
+            text-align: left;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+        transform: scale(1.1); /* Scale up the card on hover */
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Add a shadow on hover */
+        }
+        .card > img {
+            height: 57%;
+            width: 98%;
+            box-shadow: 3px 3px 200px rgb(160, 144, 144);
+            border-radius: 15px;
+        }
+
+        h2 {
+            color: rgb(97, 84, 117);
+            text-shadow: rgb(29, 5, 38) 1px ;
+        }
+
+        p {
+            color: rgb(81, 66, 109);
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="https://wallpapercave.com/wp/bNPOiMn.jpg" alt="pokemon" >
+
+            <h2>Improve Yourself.</h2>
+
+            <p>If you set your goals rediculously high even your failure will be above everyone's success.<br><br/>"I may not have amazing victories, but I can amaze you with the defeats that I came out of alive."
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+$color: red;
+ul {
+    color: $color;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#scss {
+    h1, h2{
+        color: $color;
+    }
+
+    p {
+        color: chocolate;
+    }
+
+    ul > li {
+        color: white;
+    }
+
+    ol {
+        color: rgb(52, 91, 233);
+    }
+}
